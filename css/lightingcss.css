@@ -1,0 +1,458 @@
+body {
+	margin: 0;
+	font: 12px/1.2 Tahoma, sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 794px;
+}
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.header {
+	padding: 17px 0 0;
+	margin-bottom: 1px;
+}
+.header-top {
+	padding: 0 10px 0 15px;
+	margin-bottom: 8px;
+}
+.logo {
+	float: left;
+}
+.tel {
+	float: right;
+	padding: 12px 0 0;
+}
+.tel a {	
+	font: 28px/1.2 "Copperplate Gothic Light", sans-serif;
+	text-decoration: none;
+	color: #af9f47;
+}
+.tel a:hover {
+	text-decoration: underline;
+}
+/* Навигация шапки */
+.nav-wrap {
+	background: #a25100;
+	border-radius: 4px 4px 0 0;
+	padding: 2px;
+}
+.nav {
+	font: 12px/1.2 "Copperplate Gothic Light", sans-serif;
+	text-transform: uppercase;
+	color: #fff;	
+	border: 1px solid #b57433;
+}
+.nav .search-form {
+	padding: 2px 6px;
+	float: left;
+}
+.nav .form-row,
+.main .form-row {
+	display: flex;
+	align-items: center;	
+}
+.nav .search-form label {
+	padding-right: 4px;
+}
+.nav .search-form input,
+.main .main-search-wrap .search-form input  {
+	width: 150px;
+	height: 19px;	
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 1px #404040 inset, 1px 0 0 1px #404040 inset,
+	-1px 0 0 1px #d4d0c8 inset, 0 -1px 0 1px #d4d0c8 inset;
+	padding: 2px 0 2px 5px;
+	font-size: 11px;
+}
+.nav .search-form .button,
+.main .main-search-wrap .search-form .button {
+	color: #7c4106;
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	border: 2px solid #613100;
+	box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+	background: #f5f0ea;
+	font-size: 9px;
+	font-weight: bold;
+	padding: 0 0 2px;
+}
+.form-box_padding {
+	padding-left: 4px;
+}
+.nav .main-menu {
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+.nav .main-menu li {
+	float: left;
+	padding: 0 0 0 1px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.nav .main-menu li:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+	content: "";
+	border-left: 1px solid #b57433;
+	height: 23px;
+}
+.nav .main-menu a {
+	padding: 5px 6px;
+	color: #fff;
+	text-decoration: none;
+}
+.nav .main-menu a:hover {
+	text-decoration: underline;
+}
+.nav .main-menu li:last-child a{
+	background: url(../img/korzina.jpg) no-repeat;
+	background-position: calc(100% - 8px);
+	padding-right: 30px;
+}
+/* Основной */
+.main .content {
+	float: right;
+	width: 561px;
+}
+.main .sidebar {
+	float: left;
+	width: 192px;
+	margin-right: 1px;
+	background: #f5f0ea;
+}
+/* Основной контент */
+.content .main-img {
+	width: 561px;
+	height: 338px;
+	display: block;
+	margin-bottom: 4px;
+}
+.gallery {
+	margin: 0 -3px 31px 0;
+}
+.gallery a {
+	display: block;
+	text-decoration: none;
+	float: left;
+	padding: 0 3px 0 2px;	
+	box-sizing: content-box;
+	width: 136px;
+}
+.gallery strong {
+	font-size: 11px;
+	font-weight: normal;
+	display: block;
+	color: #fff;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	text-align: center;
+	margin-bottom: 1px;
+	padding: 7px;	
+}
+.gallery a:hover strong,
+.gallery a:hover span {
+	text-decoration: underline;
+}
+.shop1 strong {
+	background: #a4ab65;
+}
+.shop2 strong {
+	background: #735d33;
+}
+.shop3 strong {
+	background: #ad6636;
+}
+.shop4 strong {
+	background: #af9f47;
+}
+.gallery img {
+	border-top: 3px solid #f5f0ea;
+	border-right: 3px solid #f5f0ea;
+	border-left: 3px solid #f5f0ea;
+	display: block;
+}
+.gallery span {
+	display: block;
+	background: #f5f0ea;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	text-align: right;
+	font-size: 10px;
+	padding: 3px 10px;
+	position: relative;
+}
+.gallery span:before {
+	display: inline-block;
+	margin-right: 6px;
+	content: "";
+	width: 7px;
+	height: 5px;		
+}
+.shop1 span:before{
+	background: url(../img/1.jpg) no-repeat;
+}
+.shop2 span:before{
+	background: url(../img/2.jpg) no-repeat;
+}
+.shop3 span:before{
+	background: url(../img/3.jpg) no-repeat;
+}
+.shop4 span:before{
+	background: url(../img/4.jpg) no-repeat;
+}
+.shop1 span {
+	color: #a4ab65
+}
+.shop2 span {
+	color: #735d33;
+}
+.shop3 span {
+	color: #ad6636;
+}
+.shop4 span {
+	color: #af9f47;
+}
+.main-search-wrap {
+	padding: 0 9px 0 8px;
+}
+.search-form_format {
+	width: 256px;
+	border-radius: 4px;
+	background: #f5f0ea;
+	float: left;
+	margin: 0 8px;
+	padding: 6px 10px;
+}
+.search-form_format h3 {
+	padding: 6px 8px;
+	margin: 0;
+	background: #a25100;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	font-size: 11px;
+	font-weight: normal;
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom: 1px solid #fff;
+	margin: -6px -10px 8px -10px;
+}
+.search-form_format span {
+	display: block;	
+	margin-bottom: 7px;
+	font-size: 11px;
+}
+.search-form_format .form-row {
+	margin-bottom: 9px;	
+}
+.main .main-search-wrap .search-form .button {
+	color: #fff;	
+	box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.4);
+	background: #a25100;
+	padding: 0 0 2px 1px;
+	border: 1px solid #f7f2ec;
+}
+/* Боковая панель */
+.sidebar-top,
+.sidebar-bottom {
+	padding: 9px 0 9px;
+	font: 12px/1.2 Tahoma, sans-serif;
+	border-bottom: 1px solid #e9d8c7;
+}
+.sidebar-bottom {
+	padding-top: 12px;
+	margin-bottom: 11px;
+}
+.sidebar-top strong,
+.sidebar-bottom strong {
+	font-weight: bold;
+	padding: 0 9px;
+	display: block;
+	margin-bottom: 3px;
+}
+.sidebar-top .nav-sidebar,
+.sidebar-bottom .nav-sidebar {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+.sidebar-top .nav-sidebar li,
+.sidebar-bottom .nav-sidebar li {
+	position: relative;
+}
+.sidebar-top .nav-sidebar a,
+.sidebar-bottom .nav-sidebar a {
+	display: block;
+	text-decoration: none;
+	color: #603000;
+	padding: 2px 21px 3px;
+	margin: 0;
+}
+.sidebar-top .nav-sidebar > li:hover .drop,
+.sidebar-bottom .nav-sidebar > li:hover .drop {
+	display: block;
+}
+.sidebar-top .nav-sidebar > li > a:hover,
+.sidebar-bottom .nav-sidebar > li > a:hover {
+	background: #fcfbfa;
+	font-weight: bold;
+}
+.nav-sidebar .drop {
+	width: 151px;
+	border: 1px solid #fff;
+	z-index: 10;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: rgba(255, 255, 255, 0.8);
+	display: none;
+}
+.nav-sidebar .drop a {
+	padding: 3px 12px;
+	font-size: 11px;
+	color: #000;
+	display: block;	
+}
+.nav-sidebar .drop a:hover {
+	color: #603000;
+	background: #fdfdfc;
+}
+.sidebar-button-wrap {
+	padding: 0 13px 0 9px;
+	margin-bottom: 8px;
+}
+
+.sidebar-button {
+	background: #af9f47 url(../img/bg-bt.jpg) no-repeat;
+	background-position: calc(100% - 12px);
+	text-decoration: none;
+	font-size: 14px;
+	padding: 6px 40px 6px 10px;
+	color: #fff;
+	border-radius: 4px;
+	border: 2px solid #fff;
+	display: block;
+}
+.sidebar-button-wrap a:hover {
+	text-decoration: underline;
+}
+.link-sidebar {
+	padding: 5px; 
+}
+.link-sidebar h5 {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0;
+	margin: 0 0 12px;
+}
+.link-sidebar a {
+	margin-bottom: 9px;
+	padding: 0 13px;
+	display: block;
+}
+.link-sidebar a:hover img {
+	transform: scale(1.1);
+	transition: .8s;
+}
+.main {
+	margin-bottom: 8px;
+}
+/* ФУТЕР */
+.nav-footer-link {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 0;
+	line-height: 0;
+	border-bottom: 3px solid #a25100;
+}
+.nav-footer-link li {
+	display: inline-block;
+	position: relative;
+	padding: 9px 11px 9px 9px;
+}
+.nav-footer-link li:not(:last-child):after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+	height: 11px;
+	content: "";
+	border-right: 2px solid #b97d40;
+}
+.nav-footer-link a {
+	font-size: 11px;
+	line-height: 1.2;
+	font-weight: bold;
+	text-decoration: none;
+	color: #bc8967;
+}
+.nav-footer-link a:hover {
+	text-decoration: underline;
+}
+.footer-bottom {
+	padding: 4px 5px;
+}
+.footer-bottom .en {
+	padding: 7px;
+	display: block;
+}
+.footer-bottom .ss {
+	padding: 15px 23px 12px;
+	display: block;
+}
+.footer-bottom .cards {
+	padding: 24px 5px 15px;
+	margin: 0 -5px;
+}
+.footer-bottom .cards a{
+	padding: 1px;
+	display: block;
+	float: left;
+}
+.footer-bottom a:hover,
+.footer-bottom .cards a:hover img {
+	transform: scale(1.1);
+	transition: .8s;
+}
+.copyright {
+	padding: 13px 5px;
+	margin: 0 -5px;
+}
+.copyright span {
+	display: block;
+	font-size: 11px;
+	line-height: 1.7;
+	color: #999;
+	text-align: right;
+	padding: 0;
+
+}
+.footer-bottom-elements {
+	float: left;
+}
+.footer-bottom-elements_fix {
+	float: right;
+}
